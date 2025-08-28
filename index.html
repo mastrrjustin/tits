@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Ranked TitS</title>
+		<link rel="stylesheet" href="styles.css" />
+	</head>
+	<div class="topbar">
+		<div class="title">Ranked Titration Simulator</div>
+		<div class="controls">
+			<button id="fsBtn" title="Fullscreen">⛶ Fullscreen</button>
+			<button id="newRoundBtn" disabled>Start Next Round</button>
+		</div>
+	</div>
+	<div class="notice muted" id="notice">
+		Randomised reactants & indicators each round. Add titrant in increments;
+		you cannot remove it. Submit when you believe you've hit the endpoint.
+		Once any player submits, both volumes are hidden until both submit. No
+		reset button by design.
+	</div>
+	<body>
+		<div class="wrrap">
+			<div class="grid" id="grid">
+				<!-- Player cards will be injected here -->
+			</div>
+		</div>
+
+		<div class="footer muted">
+			<span
+				>Player 1 <span class="kbd">A</span>/<span class="kbd">S</span
+				>/<span class="kbd">D</span>, Submit
+				<span class="kbd">F</span> • Player 2
+				<span class="kbd">J</span>/<span class="kbd">K</span>/<span
+					class="kbd"
+					>L</span
+				>, Submit <span class="kbd">;</span></span
+			>
+		</div>
+
+		<script src="app.js"></script>
+	</body>
+</html>
